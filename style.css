@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #000000;
+    width:100%;
+    height:100%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+    display: inline-table;
+}
+
+
+#header{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#logo-place{
+    background-color:black;
+}
+
+svg {
+    fill: white;
+    background: black;
+    max-width: 70%;
+    padding: 12px;
+  }
+
+#nav{
+    background-color: black;
+    text-align: right;
+
+}
+
+#nav li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px;
+    text-decoration: none;
+    line-height: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+
+
+#nav li a{
+    color: white;
+    text-decoration: none;
+}
+#nav li a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+#nav li a:link{
+    color: white;
+    text-decoration: none;
+}
+
+#nav li a:active{
+    color: white;
+    text-decoration: none;
+}
+
+
+h1, h2, h3{
+    color:white;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.blogpost { 
+    display:grid;
+    padding: 2rem;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+
+}
+
+
+.blogpost > * { 
+    background-color:black;
+    padding: 2rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: rgb(171, 171, 171);
+    font-weight:normal;
+
+
+}
+
+
+.post img{
+    padding-bottom: 20px;
+}
+
+button{
+    padding: 10px 15px;
+    margin: 12px 0px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+}
+
+@media only screen and (max-width: 600px) {
+    #header{
+        display:grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    #nav{
+        text-align: center;
+    }
+  }
+
+
+
+.trailer-vid { 
+    padding: 2rem;
+    border-style: solid;
+    border-color:black;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+footer{
+    display: grid;
+    background-color: #1c1c1c;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+
+form .form-field {
+    display: grid;
+    padding: 2rem;
+    color:white;
+}
+
+form .form-field input, textarea{
+    display: grid;
+    background-color: #000000;
+    padding: 1rem;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+
+}
+
+form .form-field label{
+    display: none;
+
+}
+
+.about-note{
+    display: grid;
+    padding: 2rem;
+    color:rgb(129, 128, 128);
+    font-size: 25px;
+    font-style: italic;
+    line-height: 30px;
+    text-align: center;
+}
